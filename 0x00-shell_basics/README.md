@@ -9,5 +9,6 @@ Explanation of rach script in this directory.
 7-movethatfile:- this script moves "betty" file to "my_first_directory" in /tmp path.
 8-firstdelete:- this script removes "betty" file from "my_first_directory in /tmp path.
 9-firstdirdeletion:- this script removes "my_first_directory" directory in /tmp path.
+10-back:- this script changes the working directory to the previous.
 
 
