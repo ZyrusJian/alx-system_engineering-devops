@@ -5,3 +5,4 @@ Explanation of rach script in this directory.
 3-listfiles:- this script is used to list files and directories found in working directory in a long format.
 4-listmorefiles:- this script is used to list files and directories including hidden found in working directory in long format.
 5-listfilesdigitonly:- this script is used to list files and directories with user and group ID displayed numerically in long format.
+6-firstdirectory:- this script creates a directory called "my_first_directory" in the /tmp path.
