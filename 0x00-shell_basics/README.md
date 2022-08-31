@@ -12,5 +12,6 @@ Explanation of rach script in this directory.
 10-back:- this script changes the working directory to the previous.
 11-lists:- this script lists file and directories of workng directory, parent directory to working directory, and "boot" directory repectively in a long format and with hidden files displayed.
 12-file_type:- this script identifies what type of file "iamafile" is.
+13-symbolic_link:-this script creates a symbol link to "ls".
 
 
