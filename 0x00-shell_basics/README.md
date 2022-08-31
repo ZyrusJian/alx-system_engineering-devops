@@ -13,5 +13,6 @@ Explanation of rach script in this directory.
 11-lists:- this script lists file and directories of workng directory, parent directory to working directory, and "boot" directory repectively in a long format and with hidden files displayed.
 12-file_type:- this script identifies what type of file "iamafile" is.
 13-symbolic_link:-this script creates a symbol link to "ls".
+14-copy_html:- this script copies newer html files from current directory to its parent directory.
 
 
