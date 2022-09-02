@@ -5,4 +5,4 @@ This are scripts affecting shell permissions.
 3-new_owner:- changes owner of file "hello" to betty.
 4-empty: creates an empty file called hello .
 5-execute:- gives execute permission to owner of hello file.
-
+6-multiple_permissions:- gives multiple permission to group and owner.
