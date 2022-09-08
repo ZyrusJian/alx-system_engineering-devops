@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /etc/passwd | grep -w 'home' | grep -wv 'syslog' | sort -d
+cat /etc/passwd | grep -w 'home' | sort -d
