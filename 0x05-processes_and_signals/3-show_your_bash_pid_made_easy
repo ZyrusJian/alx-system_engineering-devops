@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script displays the PID, along with the process name, of processes whose name contain the word bash.
+# Use the /proc filesystem to get the PID and process name of all processes whose name contain the word bash
+for pid in /proc/*/; do
+    if grep -q "bash" "$pid/cmdline" 2>/dev/null; then
+        echo "${pid%/} bash"
+    fi
+done | awk '{print $1, $2}' | head -n 2 | sed 's/\/proc\///'
