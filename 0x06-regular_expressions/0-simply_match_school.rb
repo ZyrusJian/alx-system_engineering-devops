@@ -2,5 +2,7 @@
 
 arg = ARGV[0]
 if arg =~ /School/
-  puts arg
+  count = arg.scan(/School/).count
+  matches = "School" * count
+  puts matches
 end
