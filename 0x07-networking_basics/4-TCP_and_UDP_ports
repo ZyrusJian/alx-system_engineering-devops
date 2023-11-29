@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script displays listening ports and shows the PID and name of the program to which each socket belongs.
+echo "Listening TCP ports:"
+sudo netstat -ltnp | awk '$6 == "LISTEN" {print $4, $7}' | sed 's/.*://' | awk '{print $1, $2}' | while read -r port pid; do
+    name=$(ps -p "$pid" -o comm=)
+    echo "Port $port is being used by PID $pid ($name)"
+done
+echo "Listening UDP ports:"
+sudo netstat -lnup | awk '$1 == "udp" && $6 == "LISTEN" {print $4, $7}' | sed 's/.*://' | awk '{print $1, $2}' | while read -r port pid; do
+    name=$(ps -p "$pid" -o comm=)
+    echo "Port $port is being used by PID $pid ($name)"
+done
